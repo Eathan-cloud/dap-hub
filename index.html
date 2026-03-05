@@ -538,14 +538,14 @@
     // 2. SUPER ADMIN
     let sup = S.u.find(x => x.d === 'SUPER ADMIN');
     if (!sup) {
-        S.u.push({n: 'SUPER', p: '10134679', d: 'SUPER ADMIN', s: 'active', m: [...BASE_MODS]});
+        S.u.push({n: 'STEVEN', p: '10134679', d: 'SUPER ADMIN', s: 'active', m: [...BASE_MODS]});
         usersModified = true;
     }
 
     // 3. ADMIN (FORCE MODULES)
     let adm = S.u.find(x => x.n === 'ADMIN' || x.d === 'ADMIN');
     if (!adm) {
-        S.u.push({n: 'ADMIN', p: '123', d: 'ADMIN', s: 'active', m: ADMIN_DEFAULT_MODS});
+        S.u.push({n: 'ADMIN', p: '12345', d: 'ADMIN', s: 'active', m: ADMIN_DEFAULT_MODS});
         usersModified = true;
     } else {
         adm.m = ADMIN_DEFAULT_MODS;
@@ -1500,3 +1500,5 @@
   </script>
 </body>
 </html>
+  
+
